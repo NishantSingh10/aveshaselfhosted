@@ -1,0 +1,7 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  testing-runner:
+    runs-on: [self-hosted, linux, X64, nishant, aws, ec2]
+    steps:
+      - run: sudo yum install httpd -y
